@@ -8,11 +8,22 @@
 import SwiftUI
 
 struct HeaderDetailView: View {
+    // MARK: - PROPERTIES
+    
+    // MARK: - BODY
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading, spacing: 6, content: {
+            Text("Protective Gear")
+            
+            Text(sampleProduct.name)
+                .font(.largeTitle)
+                .fontWeight(.black)
+        })//: VSTACK
+        .foregroundColor(.white)
     }
 }
 
+// MARK: - PREVIEW
 #Preview {
     HeaderDetailView()
 }

@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct NavigationBarDetialView: View {
+    // MARK: - PROPERTY
+    
+    // MARK: - BODY
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Button(action: {}, label: {
+                Image(systemName: "chevron.left")
+                    .font(.title)
+                    .foregroundColor(.white)
+            })
+            
+            Spacer()
+            
+            Button(action: {}, label: {
+                Image(systemName: "cart")
+                    .font(.title)
+                    .foregroundColor(.white)
+            })
+        }//: HSTACK
     }
 }
 
+// MARK: - PREVIEW
 #Preview {
     NavigationBarDetialView()
 }
